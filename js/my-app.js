@@ -11,6 +11,17 @@ var mainView = myApp.addView('.view-main', {
 });
 
 // Callbacks to run specific code for specific pages, for example for About page:
+
+
+myApp.onPageInit('index', function (page) {
+	$.getJSON('map_data.php', function(response) {
+	for (i = 0; i < response.length; i++) {  
+	var html = 'result here:' + response[i][2];
+	document.getElementById('result').innerHTML = html;
+	}
+	});
+});
+
 myApp.onPageInit('about', function (page) {
     // run createContentPage func after link was clicked
     $$('.create-page').on('click', function () {
