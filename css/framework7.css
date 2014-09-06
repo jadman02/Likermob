@@ -574,6 +574,7 @@ html.android .page-from-center-to-right {
   left: 0;
   top: 0;
   width: 100%;
+  background-color:#ffffff;
   height: 100%;
   padding: 0 8px;
   -webkit-box-sizing: border-box;
