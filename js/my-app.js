@@ -15,7 +15,7 @@ var mainView = myApp.addView('.view-main', {
 
 myApp.onPageInit('index', function (page) {
 	
-	displayDeals();
+	alert('test');
 	
 });
 
@@ -26,14 +26,7 @@ myApp.onPageInit('about', function (page) {
     });
 });
 
-function displayDeals() {
-	
 
-	document.getElementById("result").innerHTML = 'test';
-
-
-	
-	};
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
