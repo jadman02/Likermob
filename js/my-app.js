@@ -14,6 +14,7 @@ myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
 $( '#result' ).empty();
+$( '#result' ).remove();
 
 });
  
