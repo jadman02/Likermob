@@ -5,7 +5,7 @@ var myApp = new Framework7({
 	preprocess: function (content, url, next) {
         if (url === 'index.html') {
 	
-	alert("index.html");
+	alert('index.html');
 	
 			
 		}
