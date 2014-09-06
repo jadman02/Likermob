@@ -6,16 +6,16 @@ var myApp = new Framework7();
 // Export selectors engine
 var $$ = Dom7;
 
-$( "#result" ).remove();
+$$( "#result" ).remove();
 
-
+$(document).ready(function() {
 $.getJSON('http://www.smilesavers.net.au/map_data.php', function(response) {
     
 
 alert('got data');
 
 })
-
+});
 
 
 // Add view
