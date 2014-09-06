@@ -2,7 +2,12 @@
 var myApp = new Framework7();
 var serviceURL = "http://smilesavers.net.au/";
 
-document.getElementById('result').innerHTML = 'test';
+$.getJSON(serviceURL + 'map_data.php', function(response) {
+for (i = 0; i < response.length; i++) {  
+var html = '' + response[i][2];
+document.getElementById('result').innerHTML = html;
+}
+});
 
 // Export selectors engine
 var $$ = Dom7;
