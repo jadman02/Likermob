@@ -13,7 +13,7 @@ var $$ = Dom7;
 myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
-$( '#result' ).empty();
+
 
 $.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?','firstname=Jeff',function(res){
     alert('Your name is '+res.fullname + 'id is '+res.id);
