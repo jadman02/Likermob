@@ -15,6 +15,15 @@ myApp.onPageInit('index', function (page) {
 
 $( '#result' ).empty();
 
+$.getJSON('http://www.smilesavers.net.au/map_data.php', function(response) {
+    
+
+alert('got data');
+
+
+})
+
+
 });
  
 //And now we initialize app
