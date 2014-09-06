@@ -8,6 +8,12 @@ var $$ = Dom7;
 
 $$( "#result" ).remove();
 
+$$.get( '/lib/test.php', function( data ) {
+  alert( 'Load was performed.' );
+});
+
+
+
 // Add view
 var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
