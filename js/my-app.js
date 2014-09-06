@@ -14,14 +14,10 @@ myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
 $( '#result' ).empty();
-
-$.getJSON('http://www.smilesavers.net.au/map_data.php', function(response) {
-    
-
-alert('got data');
-
-
-})
+$.get( '/lib/test.php', function( data ) {
+  $( '#result' ).html( data );
+  alert( 'Load was performed.' );
+});
 
 
 });
