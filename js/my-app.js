@@ -14,9 +14,9 @@ myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
 $( '#result' ).empty();
-$.get( '/lib/test.php', function( data ) {
-  $( '#result' ).html( data );
-  alert( 'Load was performed.' );
+$.getJSON("http://www.smilesavers.net.au/map_data.php?callback=?", function(result){
+   //response data are now in the result variable
+   alert(result);
 });
 
 
