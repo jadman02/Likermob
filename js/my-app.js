@@ -6,11 +6,19 @@ var myApp = new Framework7();
 // Export selectors engine
 var $$ = Dom7;
 
-//Add callback function that will be executed when Page with data-page="about" attribute will be initialized
-myApp.onPageInit('index', function (page) {
-  alert('About page initialized');
-  alert(page);
-});
+
+$$.getJSON('lib/map_data.php', function(response) {
+    
+
+alert('got data');
+
+
+
+ 
+
+
+
+})
 
 
 
