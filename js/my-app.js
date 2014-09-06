@@ -14,10 +14,18 @@ myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
 $( '#result' ).empty();
-$.getJSON("http://www.smilesavers.net.au/map_data.php?callback=?", function(result){
-   //response data are now in the result variable
-   alert(result);
-});
+$.ajax({
+
+url: 'https://www.google.com',
+data: {},
+success: function() {
+alert('success');
+},
+error: function() {
+alert('error')
+}
+
+})
 
 
 });
