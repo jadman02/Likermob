@@ -6,16 +6,8 @@ var myApp = new Framework7();
 // Export selectors engine
 var $$ = Dom7;
 
-$$( "#result" ).remove();
+$( "#result" ).remove();
 
-$$(document).ready(function() {
-$$.getJSON('http://www.smilesavers.net.au/map_data.php', function(response) {
-    
-
-alert('got data');
-
-})
-});
 
 
 // Add view
@@ -31,7 +23,7 @@ var mainView = myApp.addView('.view-main', {
 
 myApp.onPageInit('index', function (page) {
     // run createContentPage func after link was clicked
-    alert('index page bitches');
+    myApp.alert('index page bitches');
 	$$('.create-page').on('click', function () {
         createContentPage();
     });
