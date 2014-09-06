@@ -8,9 +8,7 @@ var $$ = Dom7;
 
 $$( "#result" ).remove();
 
-$$.get( '/search.html', function( data ) {
-  alert( 'Load was performed.' );
-});
+
 
 
 
@@ -19,6 +17,17 @@ var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
     dynamicNavbar: true
 });
+
+
+$$(document).on('pageInit', function (e) {
+  // Get page data from event data
+  var page = e.detail.page;
+  
+  if (page.name === 'index') {
+    // Following code will be executed for page with data-page attribute equal to "about"
+    myApp.alert('Here comes Index page');
+  }
+})
 
 // Callbacks to run specific code for specific pages, for example for About page:
 
