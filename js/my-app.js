@@ -6,9 +6,15 @@ var myApp = new Framework7();
 // Export selectors engine
 var $$ = Dom7;
 
-$$( "#result" ).remove();
+$( "#result" ).remove();
 
 
+$.getJSON('http://www.smilesavers.net.au/map_data.php', function(response) {
+    
+
+alert('got data');
+
+})
 
 
 
@@ -19,15 +25,7 @@ var mainView = myApp.addView('.view-main', {
 });
 
 
-$$(document).on('pageInit', function (e) {
-  // Get page data from event data
-  var page = e.detail.page;
-  
-  if (page.name === 'index') {
-    // Following code will be executed for page with data-page attribute equal to "about"
-    myApp.alert('Here comes Index page');
-  }
-})
+
 
 // Callbacks to run specific code for specific pages, for example for About page:
 
@@ -37,6 +35,8 @@ myApp.onPageInit('about', function (page) {
         createContentPage();
     });
 });
+
+
 
 
 
