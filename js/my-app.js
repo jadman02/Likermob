@@ -3,8 +3,7 @@ var myApp = new Framework7();
 
 $.getJSON('http://smilesavers.net.au/map_data.php', function(response) {
 for (i = 0; i < response.length; i++) {  
-var html = '' + response[i][2];
-document.getElementById('result').innerHTML = html;
+document.getElementById('result').innerHTML = 'yes';
 }
 });
 
