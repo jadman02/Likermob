@@ -14,9 +14,14 @@ var mainView = myApp.addView('.view-main', {
 
 // Callbacks to run specific code for specific pages, for example for About page:
 
-myApp.onPageInit('index', function (page) {
-   alert('test');
-});
+$$(document).on('pageInit', function (e) {
+  // Do something here when page loaded and initialized
+  
+  alert('testy');
+  
+})
+
+
 
 
 myApp.onPageInit('about', function (page) {
