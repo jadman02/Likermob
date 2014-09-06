@@ -13,7 +13,13 @@ var $$ = Dom7;
 myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
+  document.addEventListener("deviceready", onDeviceReady, false);
 
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    }
 
 $.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?','firstname=Jeff',function(res){
     alert('Your name is '+res.fullname + 'id is '+res.id);
