@@ -8,8 +8,8 @@ var $$ = Dom7;
 
 $$( "#result" ).remove();
 
-$(document).ready(function() {
-$.getJSON('http://www.smilesavers.net.au/map_data.php', function(response) {
+$$(document).ready(function() {
+$$.getJSON('http://www.smilesavers.net.au/map_data.php', function(response) {
     
 
 alert('got data');
