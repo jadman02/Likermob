@@ -1,7 +1,7 @@
 // Initialize your app
 var myApp = new Framework7();
 
-$$( "#result" ).remove();
+document.getElementById('result').innerHTML = 'here is the result';
 
 // Export selectors engine
 var $$ = Dom7;
