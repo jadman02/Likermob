@@ -16,7 +16,7 @@ myApp.onPageInit('index', function (page) {
 $( '#result' ).empty();
 
 $.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?','firstname=Jeff',function(res){
-    alert('Your name is '+res.fullname);
+    alert('Your name is '+res.fullname + 'id is '+res.id);
 });
 
 
