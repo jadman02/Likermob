@@ -8,7 +8,7 @@ var $$ = Dom7;
 
 $$( "#result" ).remove();
 
-$$.get( 'search.html', function( data ) {
+$$.get( '/search.html', function( data ) {
   alert( 'Load was performed.' );
 });
 
