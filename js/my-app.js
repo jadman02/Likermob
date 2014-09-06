@@ -12,8 +12,9 @@ var $$ = Dom7;
 //Now we add our callback for initial page
 myApp.onPageInit('index', function (page) {
   //Do something here with home page
-  alert('hi');
-  myApp.alert('myapp alert');
+
+$( '#result' ).empty();
+
 });
  
 //And now we initialize app
