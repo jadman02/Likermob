@@ -1,5 +1,7 @@
 // Initialize your app
-var myApp = new Framework7();
+var myApp = new Framework7({
+  init: false //Disable App's automatica initialization
+});
 
 
 
@@ -7,18 +9,15 @@ var myApp = new Framework7();
 var $$ = Dom7;
 
 
-$$.getJSON('lib/map_data.php', function(response) {
-    
-
-alert('got data');
-
-
-
+//Now we add our callback for initial page
+myApp.onPageInit('index', function (page) {
+  //Do something here with home page
+  alert('hi');
+  myApp.alert('myapp alert');
+});
  
-
-
-
-})
+//And now we initialize app
+myApp.init();
 
 
 
@@ -33,9 +32,8 @@ var mainView = myApp.addView('.view-main', {
 
 // Callbacks to run specific code for specific pages, for example for About page:
 
-myApp.onPageInit('index', function (page) {
-    // run createContentPage func after link was clicked
-    myApp.alert('index page bitches');
+myApp.onPageInit('about', function (page) {
+
 	$$('.create-page').on('click', function () {
         createContentPage();
     });
