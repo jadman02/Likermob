@@ -14,15 +14,11 @@ myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
 $( '#result' ).empty();
-$( '#result' ).remove();
 
 });
  
 //And now we initialize app
 myApp.init();
-
-$( '#result' ).empty();
-$( '#result' ).remove();
 
 // Add view
 var mainView = myApp.addView('.view-main', {
