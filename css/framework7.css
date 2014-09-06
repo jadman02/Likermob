@@ -1235,8 +1235,13 @@ i.icon.icon-camera {
 i.icon.icon-search {
   width: 21px;
   height: 21px;
-  color: #3b5998;
   background-image: url("../img/search.png");
+}
+
+i.icon.icon-menu {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/menu.png");
 }
 
 i.icon.icon-thumbs-up {
