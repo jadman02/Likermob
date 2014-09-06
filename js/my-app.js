@@ -1,5 +1,18 @@
 // Initialize your app
-var myApp = new Framework7();
+var myApp = new Framework7({
+	
+	
+	preprocess: function (content, url, next) {
+        if (url === 'index.html') {
+	
+	alert("index.html");
+	
+			
+		}
+	}
+	
+	
+	});
 
 // Export selectors engine
 var $$ = Dom7;
@@ -13,11 +26,7 @@ var mainView = myApp.addView('.view-main', {
 // Callbacks to run specific code for specific pages, for example for About page:
 
 
-myApp.onPageInit('index', function (page) {
-	
-	alert('test');
-	
-});
+
 
 myApp.onPageInit('about', function (page) {
     // run createContentPage func after link was clicked
