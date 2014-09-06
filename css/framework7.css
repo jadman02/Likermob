@@ -1235,6 +1235,7 @@ i.icon.icon-camera {
 i.icon.icon-search {
   width: 29px;
   height: 29px;
+  color:#3b5998;
   background-image: url("../img/search.png");
 }
 
