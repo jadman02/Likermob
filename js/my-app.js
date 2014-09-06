@@ -1,7 +1,9 @@
 // Initialize your app
 var myApp = new Framework7();
 
-document.getElementById('result').innerHTML = 'here is the result';
+$( "#result" ).load( "/lib/test.php", function() {
+  alert( "Load was performed." );
+});
 
 // Export selectors engine
 var $$ = Dom7;
