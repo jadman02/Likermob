@@ -1,7 +1,7 @@
 // Initialize your app
 var myApp = new Framework7();
 
-alert('test');
+
 
 // Export selectors engine
 var $$ = Dom7;
@@ -14,7 +14,9 @@ var mainView = myApp.addView('.view-main', {
 
 // Callbacks to run specific code for specific pages, for example for About page:
 
-
+myApp.onPageInit('index', function (page) {
+   alert('test');
+});
 
 
 myApp.onPageInit('about', function (page) {
