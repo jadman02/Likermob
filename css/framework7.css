@@ -1235,13 +1235,13 @@ i.icon.icon-camera {
 i.icon.icon-search {
   width: 29px;
   height: 29px;
-  background-image: url("../img/i-search.png");
+  background-image: url("../img/search.png");
 }
 
 i.icon.icon-thumbs-up {
   width: 29px;
   height: 29px;
-  background-image: url("../img/i-thumbs-up.png");
+  background-image: url("../img/thumbs-up.png");
 }
 
 i.icon.icon-form-name {
