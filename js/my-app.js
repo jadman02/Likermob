@@ -14,12 +14,9 @@ var mainView = myApp.addView('.view-main', {
 
 
 myApp.onPageInit('index', function (page) {
-	$.getJSON('http:www.smilesavers.net.au/map_data.php', function(response) {
-	for (i = 0; i < response.length; i++) {  
-	var html = 'result here:' + response[i][2];
-	document.getElementById('result').innerHTML = html;
-	}
-	});
+	
+	displayDeals();
+	
 });
 
 myApp.onPageInit('about', function (page) {
@@ -28,6 +25,15 @@ myApp.onPageInit('about', function (page) {
         createContentPage();
     });
 });
+
+function displayDeals() {
+	
+
+	document.getElementById("result").innerHTML = 'test';
+
+
+	
+	};
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
