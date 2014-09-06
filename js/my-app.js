@@ -14,7 +14,7 @@ var mainView = myApp.addView('.view-main', {
 
 
 myApp.onPageInit('index', function (page) {
-	$.getJSON('map_data.php', function(response) {
+	$.getJSON('http:www.smilesavers.net.au/map_data.php', function(response) {
 	for (i = 0; i < response.length; i++) {  
 	var html = 'result here:' + response[i][2];
 	document.getElementById('result').innerHTML = html;
