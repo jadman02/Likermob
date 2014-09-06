@@ -1,10 +1,14 @@
 // Initialize your app
 var myApp = new Framework7();
 
-$( "result" ).html( "<span class='red'>Hello <b>Again</b></span>" );
-
 // Export selectors engine
 var $$ = Dom7;
+
+if (jQuery) {
+alert('jquery is loaded');
+} else {
+alert('Not loaded');
+}
 
 // Add view
 var mainView = myApp.addView('.view-main', {
