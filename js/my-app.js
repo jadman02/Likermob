@@ -1,7 +1,8 @@
 // Initialize your app
 var myApp = new Framework7();
+var serviceURL = "http://smilesavers.net.au/";
 
-alert('testy');
+document.getElementById('result').innerHTML = 'test';
 
 // Export selectors engine
 var $$ = Dom7;
