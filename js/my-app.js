@@ -1,18 +1,7 @@
 // Initialize your app
-var myApp = new Framework7({
-	
-	
-	preprocess: function (content, url, next) {
-        if (url === 'index.html') {
-	
-	alert('index.html');
-	
-			
-		}
-	}
-	
-	
-	});
+var myApp = new Framework7();
+
+alert('test');
 
 // Export selectors engine
 var $$ = Dom7;
