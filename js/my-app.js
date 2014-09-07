@@ -18,10 +18,10 @@ $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(respon
   
 for (i = 0; i < response.length; i++) {        
 
-document.getElementById('result').innerHTML = response[i][2] + ',';
-
-
+var html = response[i] + ',';
 }
+
+alert(html);
   
 
 });
