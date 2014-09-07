@@ -6,4 +6,4 @@
     function onDeviceReady() {
         alert('device ready');
     }
- document.addEventListener("deviceready", onDeviceReady, false);
+ document.addEventListener("deviceready", onDeviceReady, true);
