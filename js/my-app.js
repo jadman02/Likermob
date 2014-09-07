@@ -14,9 +14,8 @@ myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
 
-$$.getJSON("http://smilesavers.net.au/jsonp.php?callback=?", function(result){
-   //response data are now in the result variable
-   alert(result);
+$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?','firstname=Jeff',function(res){
+    alert('Your name is '+res.fullname + 'Your id is '+res.id);
 });
 
 
