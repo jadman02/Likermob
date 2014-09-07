@@ -17,7 +17,10 @@ myApp.onPageInit('index', function (page) {
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
   
 for (i = 0; i < response.length; i++) {        
-alert(response[i][2]);
+
+document.getElementById('result').innerHTML = response[i][2] + ',';
+
+
 }
   
 
