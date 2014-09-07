@@ -22,8 +22,11 @@
     <feature name="http://api.phonegap.com/1.0/notification"/>
  
 <access origin="http://smilesavers.net.au"/>
-<access origin="https://fbcdn-sphotos-d-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos*"/>
+
+
 <access origin="https://scontent-b-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-a-lax.xx.fbcdn.net"/>
  
 
  
