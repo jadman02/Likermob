@@ -16,10 +16,14 @@ myApp.onPageInit('index', function (page) {
 
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
   
-  $.each(response, function(key, value) {
-//For example
-alert(key + value)
-})
+for (i = 0; i < response.length; i++) {        
+
+alert(response[i][2] + ',');
+
+
+}
+
+
   
 
 });
