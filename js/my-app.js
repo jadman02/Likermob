@@ -14,8 +14,13 @@ myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
 
-$$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?','firstname=Jeff',function(res){
-    alert('Your name is '+res.fullname + 'Your id is '+res.id);
+$$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?','firstname=Jeff',function(response){
+  
+for (i = 0; i < response.length; i++) {        
+alert(response[i][2]);
+}
+  
+
 });
 
 
