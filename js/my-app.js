@@ -14,13 +14,7 @@ myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
 
-var serviceURL = "http://smilesavers.net.au/";
 
-var employees;
-
-
-	
-	getEmployeeList();
 
 
 });
@@ -47,7 +41,13 @@ myApp.onPageInit('about', function (page) {
 });
 
 
+var serviceURL = "http://smilesavers.net.au/";
 
+var employees;
+
+
+	
+	getEmployeeList();
 
 	
 
