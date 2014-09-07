@@ -10,7 +10,7 @@ var $$ = Dom7;
 
 
 //Now we add our callback for initial page
-myApp.onPageInit('index', function (page) {
+myApp.pageBeforeInit('index', function (page) {
   //Do something here with home page
 
 
