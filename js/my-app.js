@@ -18,7 +18,7 @@ $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(respon
   
 for (i = 0; i < response.length; i++) {        
 
-$$( '#result' ).append( response[i][1] + ',' + response[i][2] + ',' + response[i][3]);
+$$( '#result' ).append( '<img src="' + response[i][2] + '"/>' + '<br/>' + response[i][3]);
 
 
 }
