@@ -22,11 +22,60 @@
     <feature name="http://api.phonegap.com/1.0/notification"/>
  
 <access origin="http://smilesavers.net.au"/>
-<access origin="https://fbcdn-sphotos*"/>
+<access origin="https://fbcdn-sphotos-a-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-b-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-c-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-d-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-e-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-f-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-g-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-h-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-i-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-j-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-k-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-l-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-m-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-n-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-o-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-p-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-q-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-r-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-s-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-t-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-u-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-v-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-w-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-x-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-y-a.akamaihd.net"/>
+<access origin="https://fbcdn-sphotos-z-a.akamaihd.net"/>
 
 
-<access origin="https://scontent-b-lax.xx.fbcdn.net"/>
 <access origin="https://scontent-a-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-b-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-c-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-d-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-e-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-f-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-g-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-h-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-i-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-j-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-k-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-l-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-m-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-n-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-o-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-p-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-q-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-r-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-s-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-t-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-u-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-v-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-w-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-x-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-y-lax.xx.fbcdn.net"/>
+<access origin="https://scontent-z-lax.xx.fbcdn.net"/>
  
 
  
