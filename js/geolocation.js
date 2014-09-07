@@ -1,11 +1,5 @@
-// JavaScript Document
-    // Wait for device API libraries to load
-    //
-  
-
-    // onSuccess Geolocation
-    //
-    function onSuccess(position) {
+navigator.geolocation.getCurrentPosition(
+        function onSuccess(position) {
         alert('Latitude: '           + position.coords.latitude              + '<br />' +
                             'Longitude: '          + position.coords.longitude             + '<br />' +
                             'Altitude: '           + position.coords.altitude              + '<br />' +
@@ -22,3 +16,4 @@
         alert('code: '    + error.code    + '\n' +
               'message: ' + error.message + '\n');
     }
+};
