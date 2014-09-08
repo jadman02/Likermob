@@ -67,12 +67,7 @@ track_click++;
 $$(".load_more").click(function (e) {
 
 var number_pages = localStorage.getItem("total_pages");
-
 var stop = Math.ceil(number_pages / 5);
-
-alert(stop);
-alert(number_pages);
-
 
 if (track_click >= (stop-1)) {
 $$(".load_more").attr("disabled", "disabled");
