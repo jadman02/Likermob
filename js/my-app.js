@@ -64,6 +64,8 @@ $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div clas
 
 track_click++;
 
+alert(track_click);
+
 });
 
 
