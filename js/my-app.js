@@ -4,7 +4,6 @@ var myApp = new Framework7({
 });
 
 
-
 // Export selectors engine
 var $$ = Dom7;
 
@@ -30,6 +29,7 @@ $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div clas
 
 
 });
+
  
 //And now we initialize app
 myApp.init();
