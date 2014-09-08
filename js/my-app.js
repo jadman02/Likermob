@@ -51,7 +51,7 @@ function functionEmpty() {
 var track_click = 0;
 var limit = 10;
 
-if(track_click == 0) {
+if(track_click = 0) {
 	
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 var get_total_rows = response.length;
