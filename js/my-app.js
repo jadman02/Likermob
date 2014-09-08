@@ -20,7 +20,7 @@ for (i = 0; i < response.length; i++) {
 
 $$( '#result' ).append( 
 	'<li><a href="#" class="item-link item-content">' +
-	'<div class="item-media"><img style="height:80px;width:80px;" src="http://graph.facebook.com/'+response[i][2]+'/picture" /></div>' +
+	'<div class="item-media"><img src="http://graph.facebook.com/'+response[i][2]+'/picture?width=120&height=120" /></div>' +
 	'<div class="item-inner">' +
 	'<div class="item-title-row">' +
 	' <div class="item-title">Yellow Submarine</div>' +
