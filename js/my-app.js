@@ -65,7 +65,7 @@ track_click++;
 
 $$(".load_more").click(function (e) {
 
-alert('totAL results' + total_pages);	
+alert('total results' + total_pages);	
 	
 });
 
