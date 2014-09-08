@@ -67,10 +67,8 @@ track_click++;
 $$(".load_more").click(function (e) {
 
 // Retrieve
-var total_pages_stored == localStorage.getItem("total_pages");
-var max_click = Math.ceil(total_pages_stored / 5);
+if(localStorage.getItem("total_pages")){alert('value exists');};
 
-if (max_click == 3) {alert('3 clicks');}
 
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 
