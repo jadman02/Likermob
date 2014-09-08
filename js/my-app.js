@@ -50,7 +50,9 @@ function functionEmpty() {
 
 var track_click = 0;
 
+if (track_click = 0) {
 alert(track_click);
+}
 	
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 for (i = 0; i < response.length; i++) {        
