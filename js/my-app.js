@@ -73,10 +73,10 @@ if (track_click >= (stop-1)) {
 $$(".load_more").attr("disabled", "disabled");
 }
 
-$$("li").remove();
+
 
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
-
+$$("li").remove();
 var start = track_click * 5;
 var finish = start + 5;
 
