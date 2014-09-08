@@ -44,20 +44,51 @@ myApp.onPageInit('about', function (page) {
 
 
 
+
+
 function functionEmpty() {
 
 var track_click = 0;
-var page_per_view = 10;
+var limit = 10;
 
+if(track_click == 0) {
 	
-$$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', 'page=0', function(response){
+$$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
+var get_total_rows = response.length;
+var total_pages = get_total_rows / item_per_page;
+for (i = 0; i < limit; i++) {        
+$$( '#result' ).append('<li><a href="#" class="item-link item-content"><div class="item-media"><img src="http://graph.facebook.com/'+response[i][2]+'/picture?width=120&height=120" /></div><div class="item-inner">'+ '<div class="item-title-row"><div class="item-title">Yellow Submarine</div><div class="item-after">$15</div></div><div class="item-subtitle">Beatles</div><div class="item-text">Lorem ipsum dolor sit amet...</div></div></a></li>');
+}
 
-$$( '#result' ).append('<li><h1>' + response.length + '</h1></li>');
+track_click++;
+
+});
+
+
+}
+
+
+$(".load_more").click(function (e) {
+
+
+if(track_click <= total_pages) {
+var offset == track_click * limit; 
+$$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', 'offset=' + offset, function(response){
 for (i = 0; i < response.length; i++) {        
 $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div class="item-media"><img src="http://graph.facebook.com/'+response[i][2]+'/picture?width=120&height=120" /></div><div class="item-inner">'+ '<div class="item-title-row"><div class="item-title">Yellow Submarine</div><div class="item-after">$15</div></div><div class="item-subtitle">Beatles</div><div class="item-text">Lorem ipsum dolor sit amet...</div></div></a></li>');
 }
-});	
+});
+}
 	
+
+if(track_click >= total_pages-1) {
+alert('No more results');
+}
+	
+	
+});
+
+
 }
 
 
