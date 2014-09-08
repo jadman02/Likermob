@@ -52,6 +52,9 @@ var track_click = 0;
 
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 
+get_total_rows = response.length;
+total_pages = get_total_rows / 5;
+
 // Store
 localStorage.setItem("total_pages", response.length);
 
@@ -67,8 +70,11 @@ track_click++;
 $$(".load_more").click(function (e) {
 
 // Retrieve
-alert(localStorage.getItem("total_pages"));
-
+if (track_click == localStorage.getItem("total_pages")) {
+	
+	alert('No More Deals');
+};
+ else {
 
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 
@@ -83,6 +89,7 @@ $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div clas
 track_click++;
 
 });	
+}
 	
 });
 
