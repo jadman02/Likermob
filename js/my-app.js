@@ -70,8 +70,7 @@ var number_pages = localStorage.getItem("total_pages");
 
 var stop = Math.ceil(number_pages / 5);
 
-alert(number_pages);
-alert(stop);
+if (stop >= number_pages-1) {alert('no more clicks');};
 
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 
