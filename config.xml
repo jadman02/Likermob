@@ -23,7 +23,7 @@
  
  
 
-<access origin="http://graph.facebook.com"/>
+
  
 <access origin="http://smilesavers.net.au"/>
 <access origin="https://fbcdn-sphotos-a-a.akamaihd.net"/>
@@ -52,6 +52,36 @@
 <access origin="https://fbcdn-sphotos-x-a.akamaihd.net"/>
 <access origin="https://fbcdn-sphotos-y-a.akamaihd.net"/>
 <access origin="https://fbcdn-sphotos-z-a.akamaihd.net"/>
+
+<access origin="fbcdn-profile-a.akamaihd.net/"/>
+<access origin="fbcdn-profile-b.akamaihd.net/"/>
+<access origin="fbcdn-profile-c.akamaihd.net/"/>
+<access origin="fbcdn-profile-d.akamaihd.net/"/>
+<access origin="fbcdn-profile-e.akamaihd.net/"/>
+<access origin="fbcdn-profile-f.akamaihd.net/"/>
+<access origin="fbcdn-profile-g.akamaihd.net/"/>
+<access origin="fbcdn-profile-h.akamaihd.net/"/>
+<access origin="fbcdn-profile-i.akamaihd.net/"/>
+<access origin="fbcdn-profile-j.akamaihd.net/"/>
+<access origin="fbcdn-profile-k.akamaihd.net/"/>
+<access origin="fbcdn-profile-l.akamaihd.net/"/>
+<access origin="fbcdn-profile-m.akamaihd.net/"/>
+<access origin="fbcdn-profile-n.akamaihd.net/"/>
+<access origin="fbcdn-profile-o.akamaihd.net/"/>
+<access origin="fbcdn-profile-p.akamaihd.net/"/>
+<access origin="fbcdn-profile-q.akamaihd.net/"/>
+<access origin="fbcdn-profile-r.akamaihd.net/"/>
+<access origin="fbcdn-profile-s.akamaihd.net/"/>
+<access origin="fbcdn-profile-t.akamaihd.net/"/>
+<access origin="fbcdn-profile-u.akamaihd.net/"/>
+<access origin="fbcdn-profile-v.akamaihd.net/"/>
+<access origin="fbcdn-profile-w.akamaihd.net/"/>
+<access origin="fbcdn-profile-x.akamaihd.net/"/>
+<access origin="fbcdn-profile-y.akamaihd.net/"/>
+<access origin="fbcdn-profile-z.akamaihd.net/"/>
+
+
+
 
 
 <access origin="https://scontent-a-lax.xx.fbcdn.net"/>
