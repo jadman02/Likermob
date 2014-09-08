@@ -70,6 +70,10 @@ var number_pages = localStorage.getItem("total_pages");
 
 var stop = Math.ceil(number_pages / 5);
 
+alert(stop);
+alert(number_pages);
+
+
 if (stop >= (number_pages-1)) {
 	alert('no more clicks');
 	
