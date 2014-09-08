@@ -55,8 +55,8 @@ if(track_click == 0) {
 	
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 var get_total_rows = response.length;
-var total_pages = get_total_rows / item_per_page;
-for (i = 0; i < 10; i++) {        
+var total_pages = get_total_rows / limit;
+for (i = 0; i < limit; i++) {        
 $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div class="item-media"><img src="http://graph.facebook.com/'+response[i][2]+'/picture?width=120&height=120" /></div><div class="item-inner">'+ '<div class="item-title-row"><div class="item-title">Yellow Submarine</div><div class="item-after">$15</div></div><div class="item-subtitle">Beatles</div><div class="item-text">Lorem ipsum dolor sit amet...</div></div></a></li>');
 }
 
