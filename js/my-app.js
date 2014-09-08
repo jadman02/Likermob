@@ -59,16 +59,13 @@ $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div clas
 
 }
 track_click++;
-if (track_click==1){
-alert(track_click);
-}
 
 });
 
 
 $$(".load_more").click(function (e) {
 
-alert('clicked button');	
+alert('totAL results' + total_pages);	
 	
 });
 
