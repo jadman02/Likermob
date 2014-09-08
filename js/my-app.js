@@ -74,7 +74,7 @@ alert(stop);
 alert(number_pages);
 
 
-if (stop >= (number_pages-1)) {
+if (track_click >= (number_pages-1)) {
 	alert('no more clicks');
 	
 }
