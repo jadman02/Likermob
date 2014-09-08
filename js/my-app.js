@@ -66,7 +66,11 @@ alert(track_click);
 });
 
 
+$$(".load_more").click(function (e) {
 
+alert('clicked button');	
+	
+});
 
 
 
