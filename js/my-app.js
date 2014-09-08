@@ -56,7 +56,7 @@ get_total_rows = response.length;
 total_pages = get_total_rows / 5;
 
 // Store
-localStorage.setItem("total_pages", response.length);
+localStorage.setItem("total_pages", total_pages);
 
 for (i = 0; i < 5; i++) {        
 $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div class="item-media"><img src="http://graph.facebook.com/'+response[i][2]+'/picture?width=120&height=120" /></div><div class="item-inner">'+ '<div class="item-title-row"><div class="item-title">Yellow Submarine</div><div class="item-after">$15</div></div><div class="item-subtitle">Beatles</div><div class="item-text">Lorem ipsum dolor sit amet...</div></div></a></li>');
