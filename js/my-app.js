@@ -30,8 +30,7 @@ $$( '#result' ).append(
 	'<div class="item-text">Lorem ipsum dolor sit amet...</div>' +
 	'</div>' +
 	'</a>' +
-	'</li>' +
-	
+	'</li>'
 	);
 }
 
