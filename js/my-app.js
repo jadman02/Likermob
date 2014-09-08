@@ -68,8 +68,10 @@ $$(".load_more").click(function (e) {
 
 var number_pages = localStorage.getItem("total_pages");
 
+var stop = (number_pages / 5);
+
 alert(number_pages);
-alert(track_click);
+alert(stop);
 
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 
