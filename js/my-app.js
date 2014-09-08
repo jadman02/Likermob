@@ -14,7 +14,6 @@ myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
 
-
 functionEmpty();
 
 
@@ -46,8 +45,14 @@ myApp.onPageInit('about', function (page) {
 
 
 function functionEmpty() {
+
+var track_click = 0;
+var page_per_view = 10;
+
 	
-$$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
+$$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', 'page=0', function(response){
+
+$$( '#result' ).append('yes');
 for (i = 0; i < response.length; i++) {        
 $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div class="item-media"><img src="http://graph.facebook.com/'+response[i][2]+'/picture?width=120&height=120" /></div><div class="item-inner">'+ '<div class="item-title-row"><div class="item-title">Yellow Submarine</div><div class="item-after">$15</div></div><div class="item-subtitle">Beatles</div><div class="item-text">Lorem ipsum dolor sit amet...</div></div></a></li>');
 }
