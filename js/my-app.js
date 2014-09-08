@@ -50,16 +50,9 @@ myApp.onPageInit('about', function (page) {
 
 functionEmpty(){
 
-var track_click = 0;
-var loading = false;
-var results_per_load = 10;
+$$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 
-$$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', 'page=0', function(response){
 
-var get_total_rows = response.length;
-var total_pages = get_total_rows / results_per_load;
-  
-  $$( '#result' ).append('yes');
   
 for (i = 0; i < response.length; i++) {        
 
