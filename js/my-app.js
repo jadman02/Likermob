@@ -75,8 +75,7 @@ alert(number_pages);
 
 
 if (track_click >= (stop-1)) {
-	alert('no more clicks');
-	
+$$(".load_more").attr("disabled", "disabled");
 }
 
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
