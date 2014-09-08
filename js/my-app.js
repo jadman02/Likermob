@@ -4,9 +4,9 @@ var myApp = new Framework7({
 });
 
 
+
 // Export selectors engine
 var $$ = Dom7;
-
 
 
 //Now we add our callback for initial page
@@ -14,22 +14,22 @@ myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
 
-
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
+  
 for (i = 0; i < response.length; i++) {        
+
 $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div class="item-media"><img src="http://graph.facebook.com/'+response[i][2]+'/picture?width=120&height=120" /></div><div class="item-inner">'+ '<div class="item-title-row"><div class="item-title">Yellow Submarine</div><div class="item-after">$15</div></div><div class="item-subtitle">Beatles</div><div class="item-text">Lorem ipsum dolor sit amet...</div></div></a></li>');
-}	
-});
+}
 
 
   
 
+});
 
 
 
 
 });
-
  
 //And now we initialize app
 myApp.init();
@@ -40,6 +40,9 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
+
+
+
 // Callbacks to run specific code for specific pages, for example for About page:
 
 myApp.onPageInit('about', function (page) {
@@ -48,25 +51,6 @@ myApp.onPageInit('about', function (page) {
         createContentPage();
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
