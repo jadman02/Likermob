@@ -67,7 +67,7 @@ track_click++;
 $$(".load_more").click(function (e) {
 
 // Retrieve
-var total_pages_stored == localStorage.getItem('total_pages'));
+var total_pages_stored == localStorage.getItem("total_pages");
 var max_click = Math.ceil(total_pages_stored / 5);
 
 if (max_click == 3) {alert('3 clicks');}
