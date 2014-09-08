@@ -50,8 +50,6 @@ myApp.onPageInit('about', function (page) {
 
 functionEmpty(){
 
-
-$$( "#result" ).empty();
 var track_click = 0;
 var loading = false;
 var results_per_load = 10;
@@ -61,8 +59,10 @@ $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', 'page=0', funct
 var get_total_rows = response.length;
 var total_pages = get_total_rows / results_per_load;
   
+  $$( '#result' ).append('yes');
+  
 for (i = 0; i < response.length; i++) {        
-$$( '#result' ).append('yes');
+
 $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div class="item-media"><img src="http://graph.facebook.com/'+response[i][2]+'/picture?width=120&height=120" /></div><div class="item-inner">'+ '<div class="item-title-row"><div class="item-title">Yellow Submarine</div><div class="item-after">$15</div></div><div class="item-subtitle">Beatles</div><div class="item-text">Lorem ipsum dolor sit amet...</div></div></a></li>');
 }	
 	
