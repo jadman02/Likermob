@@ -60,7 +60,7 @@ $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div clas
 
 }
 track_click++;
-$$(".load_previous").show();
+
 
 });
 
