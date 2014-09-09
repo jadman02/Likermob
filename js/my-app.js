@@ -74,6 +74,7 @@ track_click--;
 	
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 $$("#result li").remove();
+$(window).scrollTop(0);
 
 var start = track_click * 5;
 var finish = start + 5;
@@ -108,6 +109,7 @@ $$(".load_more").attr("disabled", "disabled");
 
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 $$("#result li").remove();
+$(window).scrollTop(0);
 
 var start = track_click * 5;
 var finish = start + 5;
