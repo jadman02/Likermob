@@ -55,13 +55,14 @@ $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(respon
 
 // Store
 localStorage.setItem("total_pages", response.length);
-
+$$("#loader-container").hide();
 for (i = 0; i < 5; i++) {        
 $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div class="item-media"><img src="http://graph.facebook.com/'+response[i][2]+'/picture?width=120&height=120" /></div><div class="item-inner">'+ '<div class="item-title-row"><div class="item-title">Yellow Submarine</div><div class="item-after">$15</div></div><div class="item-subtitle">Beatles</div><div class="item-text">Lorem ipsum dolor sit amet...</div></div></a></li>');
 
 }
 track_click++;
-
+$$(".load_more").show();
+$$(".load_previous").show();
 
 });
 
@@ -69,9 +70,12 @@ track_click++;
 $$(".load_previous").click(function (e) {
 
 $$(".load_more").removeAttr("disabled", "disabled");
+$$(".load_more").hide();
+$$(".load_previous").hide();
+$$("#loader-container").show();
 
 track_click--;
-	
+$$("#loader-container").hide();	
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 $$("#result li").remove();
 
@@ -84,8 +88,9 @@ $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div clas
 
 }
 
-$$('html,body').scrollTop(0);
 
+$$(".load_more").show();
+$$(".load_previous").show();
 
 
 });
@@ -98,7 +103,9 @@ $$('html,body').scrollTop(0);
 });
 
 $$(".load_more").click(function (e) {
-
+$$(".load_more").hide();
+$$(".load_previous").hide();
+$$("#loader-container").show();
 var number_pages = localStorage.getItem("total_pages");
 var stop = Math.ceil(number_pages / 5);
 
@@ -107,7 +114,7 @@ $$(".load_more").attr("disabled", "disabled");
 }
 
 
-
+$$("#loader-container").hide();	
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 $$("#result li").remove();
 
@@ -119,11 +126,12 @@ for (i = start; i < finish; i++) {
 $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div class="item-media"><img src="http://graph.facebook.com/'+response[i][2]+'/picture?width=120&height=120" /></div><div class="item-inner">'+ '<div class="item-title-row"><div class="item-title">Yellow Submarine</div><div class="item-after">$15</div></div><div class="item-subtitle">Beatles</div><div class="item-text">Lorem ipsum dolor sit amet...</div></div></a></li>');
 
 }
-
+$$(".load_more").show();
+$$(".load_previous").show();
 $$(".load_previous").removeAttr("disabled", "disabled");
 
 track_click++;
-$$('html,body').scrollTop(0);
+
 
 });	
 	
