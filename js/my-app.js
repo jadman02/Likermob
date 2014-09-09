@@ -74,7 +74,7 @@ track_click--;
 	
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 $$("#result li").remove();
-$$(window).scrollTop(0);
+
 
 var start = track_click * 5;
 var finish = start + 5;
@@ -84,7 +84,7 @@ $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div clas
 
 }
 
-
+$$(window).scrollTop(0);
 
 
 });
@@ -109,7 +109,7 @@ $$(".load_more").attr("disabled", "disabled");
 
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
 $$("#result li").remove();
-$$(window).scrollTop(0);
+
 
 var start = track_click * 5;
 var finish = start + 5;
@@ -122,6 +122,7 @@ $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div clas
 $$(".load_previous").removeAttr("disabled", "disabled");
 
 track_click++;
+$$(window).scrollTop(0);
 
 });	
 	
