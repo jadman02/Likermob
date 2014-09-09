@@ -48,6 +48,7 @@ myApp.onPageInit('about', function (page) {
 
 function functionEmpty() {
 $$(".load_more").removeAttr("disabled", "disabled");
+$$(".load_previous").attr("disabled", "disabled");
 var track_click = 0;
 
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
@@ -116,7 +117,7 @@ $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div clas
 
 }
 
-$$(".load_previous").show();
+$$(".load_previous").removeAttr("disabled", "disabled");
 
 track_click++;
 
