@@ -84,7 +84,7 @@ $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div clas
 
 }
 
-$$(window).scrollTop(0);
+window.scrollTo(0,0);
 
 
 });
@@ -122,7 +122,7 @@ $$( '#result' ).append('<li><a href="#" class="item-link item-content"><div clas
 $$(".load_previous").removeAttr("disabled", "disabled");
 
 track_click++;
-$$(window).scrollTop(0);
+window.scrollTo(0,0);
 
 });	
 	
