@@ -76,7 +76,7 @@ $$(".load_more").attr("disabled", "disabled");
 
 
 $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(response){
-$$("li").remove();
+$$("#result li").remove();
 var start = track_click * 5;
 var finish = start + 5;
 
