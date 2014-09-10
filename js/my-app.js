@@ -16,6 +16,7 @@ myApp.onPageInit('index', function (page) {
 
 navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
+askLocation();
 functionEmpty();
 
 
@@ -167,6 +168,11 @@ function createContentPage() {
 	return;
 }
 
+
+function askLocation() {
+	
+	navigator.geolocation.getCurrentPosition(onSuccess, onError);
+}
 
     // onSuccess Geolocation
     //
