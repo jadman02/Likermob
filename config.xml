@@ -24,94 +24,18 @@
  
 <access origin="*" />
 
+<gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.4.0">
+    <param name="APP_ID" value="129670517205110" />
+    <param name="APP_NAME" value="d0531a70120ac279ebee331df08a60fe" />
+</gap:plugin>
+
  
 <access origin="http://smilesavers.net.au"/>
-<access origin="https://fbcdn-sphotos-a-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-b-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-c-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-d-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-e-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-f-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-g-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-h-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-i-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-j-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-k-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-l-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-m-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-n-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-o-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-p-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-q-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-r-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-s-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-t-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-u-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-v-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-w-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-x-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-y-a.akamaihd.net"/>
-<access origin="https://fbcdn-sphotos-z-a.akamaihd.net"/>
-
-<access origin="fbcdn-profile-a.akamaihd.net/"/>
-<access origin="fbcdn-profile-b.akamaihd.net/"/>
-<access origin="fbcdn-profile-c.akamaihd.net/"/>
-<access origin="fbcdn-profile-d.akamaihd.net/"/>
-<access origin="fbcdn-profile-e.akamaihd.net/"/>
-<access origin="fbcdn-profile-f.akamaihd.net/"/>
-<access origin="fbcdn-profile-g.akamaihd.net/"/>
-<access origin="fbcdn-profile-h.akamaihd.net/"/>
-<access origin="fbcdn-profile-i.akamaihd.net/"/>
-<access origin="fbcdn-profile-j.akamaihd.net/"/>
-<access origin="fbcdn-profile-k.akamaihd.net/"/>
-<access origin="fbcdn-profile-l.akamaihd.net/"/>
-<access origin="fbcdn-profile-m.akamaihd.net/"/>
-<access origin="fbcdn-profile-n.akamaihd.net/"/>
-<access origin="fbcdn-profile-o.akamaihd.net/"/>
-<access origin="fbcdn-profile-p.akamaihd.net/"/>
-<access origin="fbcdn-profile-q.akamaihd.net/"/>
-<access origin="fbcdn-profile-r.akamaihd.net/"/>
-<access origin="fbcdn-profile-s.akamaihd.net/"/>
-<access origin="fbcdn-profile-t.akamaihd.net/"/>
-<access origin="fbcdn-profile-u.akamaihd.net/"/>
-<access origin="fbcdn-profile-v.akamaihd.net/"/>
-<access origin="fbcdn-profile-w.akamaihd.net/"/>
-<access origin="fbcdn-profile-x.akamaihd.net/"/>
-<access origin="fbcdn-profile-y.akamaihd.net/"/>
-<access origin="fbcdn-profile-z.akamaihd.net/"/>
-
-
-
-
-
-<access origin="https://scontent-a-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-b-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-c-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-d-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-e-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-f-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-g-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-h-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-i-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-j-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-k-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-l-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-m-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-n-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-o-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-p-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-q-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-r-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-s-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-t-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-u-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-v-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-w-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-x-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-y-lax.xx.fbcdn.net"/>
-<access origin="https://scontent-z-lax.xx.fbcdn.net"/>
- 
-
+<access origin="*.akamaihd.net"/>
+<access origin="*.fbcdn.net"/>
+<access origin="graph.facebook.com"/>
+<access origin="api.facebook.com"/>
+<access origin="m.facebook.com"/>
  
  <gap:platform name="ios" />
  <preference name="orientation" value="portrait" />
