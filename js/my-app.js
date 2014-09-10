@@ -13,15 +13,9 @@ var $$ = Dom7;
 myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
- // Wait for Cordova to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
 
-    // Cordova is ready
-    //
-    function onDeviceReady() {
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
-    }
+navigator.geolocation.getCurrentPosition(onSuccess, onError);
+
 functionEmpty();
 
 
