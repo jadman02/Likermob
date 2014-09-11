@@ -27,14 +27,7 @@ var myApp = new Framework7({
     }
   }
 
-  // This function is called when someone finishes with the Login
-  // Button.  See the onlogin handler attached to it in the sample
-  // code below.
-  function checkLoginState() {
-    FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-    });
-  }
+
 
   window.fbAsyncInit = function() {
   FB.init({
@@ -82,6 +75,14 @@ var myApp = new Framework7({
         'Thanks for logging in, ' + response.name + '!';
     });
   }
+
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
 
 
 // Export selectors engine
