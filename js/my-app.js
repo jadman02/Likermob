@@ -27,13 +27,16 @@ var myApp = new Framework7({
     }
   }
 
-function checkLoginState() {
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  function checkLoginState() {
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
     });
   }
 
-window.fbAsyncInit = function() {
+  window.fbAsyncInit = function() {
   FB.init({
     appId      : '129670517205110',
     cookie     : true,  // enable cookies to allow the server to access 
@@ -60,8 +63,7 @@ window.fbAsyncInit = function() {
 
   };
 
-
-// Load the SDK asynchronously
+  // Load the SDK asynchronously
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -70,16 +72,16 @@ window.fbAsyncInit = function() {
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 
-function testAPI() {
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+  function testAPI() {
     alert('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       alert('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
     });
-  }  
-      
-   
+  }
 
 
 // Export selectors engine
