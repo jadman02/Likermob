@@ -110,13 +110,14 @@
             <!-- Scrollable page content -->
             <div class="page-content">
 
-
 <div class="list-block media-list">
 
 
 <div style="text-align:center;margin:0 auto;width:100%;" id="loader-container">
         <span class="preloader" style="width:31px; height:31px"></span>
         </div>
+
+<a href="#" class="button" onclick="login()">Login with Facebook</a>
 
 
 <p id="geolocation">Finding geolocation...</p>
@@ -127,11 +128,7 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
 
-<div id="status">
-</div>
 
 <p onclick="askLocation();">Re-ask gelocation</p>
 
@@ -201,7 +198,75 @@
   
   </div>
     
-    
+    <!--cordova.js is automatically injected by the Cordova build process-->
+<script src="cordova.js"></script>
+
+<script src="js/openfb.js"></script>
+
+<script>
+
+     // Defaults to sessionStorage for storing the Facebook token
+     //openFB.init({appId: '129670517205110'});
+
+    //  Uncomment the line below to store the Facebook token in localStorage instead of sessionStorage
+      openFB.init({appId: '129670517205110', tokenStore: window.localStorage});
+
+    function login() {
+        openFB.login(
+                function(response) {
+                    if(response.status === 'connected') {
+                        alert('Facebook login succeeded, got access token: ' + response.authResponse.token);
+                    } else {
+                        alert('Facebook login failed: ' + response.error);
+                    }
+                }, {scope: 'email,read_stream,publish_stream'});
+    }
+
+    function getInfo() {
+        openFB.api({
+            path: '/me',
+            success: function(data) {
+                console.log(JSON.stringify(data));
+                document.getElementById("userName").innerHTML = data.name;
+                document.getElementById("userPic").src = 'http://graph.facebook.com/' + data.id + '/picture?type=small';
+            },
+            error: errorHandler});
+    }
+
+    function share() {
+        openFB.api({
+            method: 'POST',
+            path: '/me/feed',
+            params: {
+                message: document.getElementById('Message').value || 'Testing Facebook APIs'
+            },
+            success: function() {
+                alert('the item was posted on Facebook');
+            },
+            error: errorHandler});
+    }
+
+    function revoke() {
+        openFB.revokePermissions(
+                function() {
+                    alert('Permissions revoked');
+                },
+                errorHandler);
+    }
+
+    function logout() {
+        openFB.logout(
+                function() {
+                    alert('Logout successful');
+                },
+                errorHandler);
+    }
+
+    function errorHandler(error) {
+        alert(error.message);
+    }
+
+</script>    
 <!-- Path to geolocation-->
     <script type="text/javascript" src="js/geolocation.js"></script>
     <!-- Path to Framework7 Library JS-->
